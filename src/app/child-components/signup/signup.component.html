@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>sign in</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+
+            <form [formGroup]="register" id="form_id" class="form_class" #f="ngForm">
+
+                <h2>Create account</h2>
+
+                <div class="name">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" class="enter_name" formControlName="name">
+                    <span style="color: red;" *ngIf="name && name.invalid && name.touched">Name is invalid</span>
+                </div>
+
+                <div class="email">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" class="enter_email" formControlName="email">
+                    <span style="color: red;" *ngIf="email && email.invalid && email.touched" >Email is invalid</span>
+                </div>
+
+                <div>
+                    <div class="password">
+                        <label>Password</label>
+                        <input type="password" placeholder="*********" class="enter_password" formControlName="password">
+                        <span style="color: red;" *ngIf="password && password.invalid && password.touched">Password must not contain special characters & should be more than 6 characters</span>
+                    </div>
+                    <div class="password">
+                        <label>Confirm</label>
+                        <input type="password" placeholder="*********" class="enter_password" formControlName="confirm_password">
+                        <span style="color: red;" *ngIf="confirm_password && confirm_password.invalid && confirm_password.touched">Password must not contain special characters & should be more than 6 characters</span>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <p id="agreed"> <input id="checked" type="checkbox" formControlName="checkbox"> Agree to our terms and conditions and privacy policy</p>
+                    <span style=
+                        "color: red; display: 
+                        flex; flex-direction: row; 
+                        justify-content: center; 
+                        align-items: center;" 
+                        *ngIf="checkbox && checkbox.invalid && checkbox.touched">Agree to continue.
+                    </span>
+                </div>
+
+                <div class="button">
+                    <button [disabled]="register.invalid" id="button_sub" class="btn btn-primary">Submit</button>
+                </div>
+
+                <h6 class="or">or</h6>
+
+                <div class="jumbotron">
+                    <ul class="ul_list" style="list-style-type: none;">
+                        <li>
+                            <div id="list_one"><i class="fab fa-google"></i><b>Sign up with google</b><br></div>
+                            <div id="list_two"><i class="fab fa-facebook-f"></i><b>Sign up with facebook</b></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <p>Already have an account?
+                        <a routerLink="../login">click here</a>
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

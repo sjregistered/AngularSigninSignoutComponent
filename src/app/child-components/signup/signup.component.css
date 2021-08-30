@@ -1,0 +1,139 @@
+*{
+    margin: 2px;
+    padding: 2px;
+}
+
+.email, .password, .name{
+    margin: 4px;
+}
+
+.jumbotron{
+    background-color: rgb(237, 237, 245);
+    height: 83px;
+    border-radius: 15px;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 70%;
+}
+
+.container{
+    justify-content: center;
+    border: 1px solid rgb(253, 252, 252);
+    box-shadow: blanchedalmond 20px solid;
+    border-radius: 20px;
+    align-items: center;
+    flex-direction: column;
+    min-width: 350px;
+    box-sizing: border-box;
+    background-color: rgb(237, 237, 245);
+}
+
+.ul_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#list_one{
+    margin-right: 8px;
+    padding-right: 10px;
+    text-decoration: solid;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 15px;
+    background-color: white;
+    min-width: 325px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+.checkbox{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#checked{
+    margin-right: 4px;
+    padding-right: 6px;
+}
+#agreed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#button_sub{
+    min-width: 400px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#list_two{
+    margin-right: 8px;
+    padding-right: 10px;
+    text-decoration: solid;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 15px;
+    background-color: white;
+    min-width: 325px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9px;
+    cursor: pointer;
+}
+
+#list_one:hover, #list_two:hover{
+    background-color: rgb(217, 242, 252);
+    color: black;
+}
+
+.content{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.enter_name, .enter_password, .enter_email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    border-radius: 15px;
+    min-width: 450px;
+    cursor: pointer;
+    outline: none;
+}
+.enter_name:hover, .enter_email:hover, .enter_password:hover{
+    background-color: rgb(250, 234, 228);
+    outline: none;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}

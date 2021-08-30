@@ -1,0 +1,18 @@
+*{
+    margin: 2px;
+    padding: 2px;
+}
+
+.contents{
+    margin: auto;
+    width: 500px;
+}
+
+.container{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

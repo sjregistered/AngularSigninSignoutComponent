@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>sign in</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <form id="form_id" [formGroup]="Loginform" (ngSubmit)="onSubmit()" class="form_class">
+
+                <h2><fa-icon [icon]="falock" class="fa-1x"></fa-icon>Log in</h2>
+
+                <div class="email">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" class="enter_email" formControlName="email">
+                    <span style="color: red;" *ngIf="email && email.invalid && email.touched">Email should be in a proper format.</span>
+                </div>
+
+                <div class="password">
+                    <label>Password</label>
+                    <input type="password" placeholder="*********" class="enter_password" formControlName="password">
+                    <span style="color: red;" *ngIf="password && password.invalid && password.touched">Password is required to proceed.</span>
+                </div>
+
+                <div class="button">
+                    <button type = "submit" id="button_sub" [disabled]="Loginform.invalid" class="btn btn-primary">Submit</button>
+                </div>
+
+                <h6 class="or">or</h6>
+
+                <div class="jumbotron">
+                    <ul class="ul_list" style="list-style-type: none;">
+                        <li>
+                            <div id="list_one"><i class="fab fa-google"></i><b>Log in with google</b><br></div>
+                            <div id="list_two"><i class="fab fa-facebook-f"></i><b>Log in with facebook</b></div>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+            <div class="footer">
+                <p>Do you want to register with us?
+                    <a routerLink="../signup">click here</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

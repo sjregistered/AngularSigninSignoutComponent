@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "name": "saurabh jha",
+      "email": "sssss@gmail.com",
+      "password": "jjjjjjjjj",
+      "confirm_password": "jjjjjjjjj",
+      "checkbox": true,
+      "id": 1
+    },
+    {
+      "name": "saurabh jha",
+      "email": "ssss@gmail.com",
+      "password": "ssssssss",
+      "confirm_password": "ssssssss",
+      "checkbox": true,
+      "id": 2
+    },
+    {
+      "name": "saurabhjha",
+      "email": "sjregistered@gmail.com",
+      "password": "7777777",
+      "confirm_password": "7777777",
+      "checkbox": true,
+      "id": 3
+    },
+    {
+      "name": "saurabh ",
+      "email": "kkkkkk@gmail.com",
+      "password": "rbbbrhhhr",
+      "confirm_password": "hrhhrhhrhr",
+      "checkbox": true,
+      "id": 4
+    },
+    {
+      "email": "sjregistered@gmail.com",
+      "password": "7777777",
+      "id": 5
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "pistol",
+      "id": 6
+    },
+    {
+      "email": "eve.holt@reqres.inmmmmm",
+      "password": "pistol",
+      "id": 7
+    }
+  ]
+}

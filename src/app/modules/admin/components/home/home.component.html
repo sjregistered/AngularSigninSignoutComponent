@@ -1,0 +1,13 @@
+<div class="contents">
+    <div class="container">
+        <div *ngFor="let data of people; let index = index;">
+            <div class="card" style="width: 18rem;">
+                <img src="{{data.avatar}}" class="card-img-top">
+                <div class="card-body">
+                  <p class="text-center card-text"><b>Hello guys, I am {{data.first_name}}</b></p>
+                  <p class="text-center card-text">{{data.email}}</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
